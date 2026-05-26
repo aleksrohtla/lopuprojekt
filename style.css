@@ -91,7 +91,7 @@ nav {
 }
 
 .hero-image {
-  background: var(--khaki-bg);
+  background: var(--dark-khaki);
   border-radius: 4px;
   height: 320px;
   overflow: hidden;
@@ -178,12 +178,27 @@ nav {
 
 .product-thumb {
   width: 100%;
-  height: 160px;
+  height: 260px;
   object-fit: cover;
-  border-radius: 2px;
-  margin-bottom: 20px;
+  border-radius: 4px;
+  margin-bottom: 26px;
   display: block;
 }
+
+.latikas-section {
+  margin: 40px 48px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.latikas-section img {
+  width: 100%;
+  max-width: 760px;
+  border-radius: 4px;
+  object-fit: cover;
+  display: block;
+}
+
 
 .product-card h3 {
   font-family: 'Playfair Display', serif;
