@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kalamehekott</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,9 +18,9 @@
       <li><a href="contact.html">Kontakt</a></li>
     </ul>
     <div class="nav-icons">
-      <span title="Otsing">🔍</span>
-      <span title="Lemmikud">♡</span>
-      <span title="Ostukorv">🛒</span>
+      <span title="Otsing"></span>
+      <span title="Lemmikud"></span>
+      <span title="Ostukorv"></span>
     </div>
   </nav>
 
@@ -29,11 +29,15 @@
       <img src="assets/haug.png" alt="Kalastamine">
     </div>
     <div class="hero-text">
+      <span class="hero-eyebrow">Uus kollektsioon 2025</span>
       <h1>Kõik, mida<br>kalamees<br><span>vajab.</span></h1>
       <p>Kvaliteetsed kalastustarvikud ja varustus</p>
       <p>igale veekogule ja aastaajale.</p>
       <p>Eesti kalamehele, Eesti looduses.</p>
-      <span class="hero-badge">Uus kollektsioon 2025</span>
+      <div class="hero-actions">
+        <a href="#" class="btn-primary">Vaata tooteid</a>
+        <span class="hero-badge">Tasuta saatmine üle 50 €</span>
+      </div>
     </div>
   </section>
 
@@ -41,26 +45,41 @@
   <div class="products">
     <div class="product-card">
       <span class="product-arrow">→</span>
-      <img class="product-thumb" src="assets/ongekott.jpg" alt="Öngakott">
+      <div class="product-thumb-wrap">
+        <img class="product-thumb" src="assets/ongekott.jpg" alt="Öngakott">
+      </div>
       <h3>Kalakotid</h3>
       <p>Vastupidavad ja veekindlad kotid varustuse transportimiseks. Sobib nii jõele kui järvele.</p>
-      <div class="product-price">alates 29 €</div>
+      <div class="product-footer">
+        <div class="product-price">alates 29 €</div>
+        <a href="#" class="product-link">Vaata →</a>
+      </div>
     </div>
 
     <div class="product-card">
       <span class="product-arrow">→</span>
-      <img class="product-thumb" src="assets/kalakott.png" alt="Kalakott">
+      <div class="product-thumb-wrap">
+        <img class="product-thumb" src="assets/kalakott.png" alt="Kalakott">
+      </div>
       <h3>Õnged & Söödad</h3>
       <p>Lai valik konksude, ujukite ja kunstsöötade kollektsioone kohalike kalade jaoks.</p>
-      <div class="product-price">alates 4,90 €</div>
+      <div class="product-footer">
+        <div class="product-price">alates 4,90 €</div>
+        <a href="#" class="product-link">Vaata →</a>
+      </div>
     </div>
 
     <div class="product-card">
       <span class="product-arrow">→</span>
-      <img class="product-thumb" src="assets/riidedjajalanoud.png" alt="Riided ja jalanõud">
+      <div class="product-thumb-wrap">
+        <img class="product-thumb" src="assets/riidedjajalanoud.png" alt="Riided ja jalanõud">
+      </div>
       <h3>Riided & Jalanõud</h3>
       <p>Veekindlad saapad, termokostüümid ja funktsioonikiht igaks ilmaks.</p>
-      <div class="product-price">alates 49 €</div>
+      <div class="product-footer">
+        <div class="product-price">alates 49 €</div>
+        <a href="#" class="product-link">Vaata →</a>
+      </div>
     </div>
   </div>
 
@@ -70,14 +89,13 @@
       <p>Kalamehekott on Eesti kalamehe jaoks loodud pood — mitte lihtsalt tarvikute kataloog, vaid kogemustel põhinev valik.</p>
       <p>Iga toode on valitud nii, et see töötaks meie veekogudel ja meie kliimas.</p>
       <ul class="feature-list">
-        <li>Tasuta saatmine üle 50 € tellimustel</li>
+        <li>Tasuta saatmine üle 50 €</li>
         <li>30-päevane tagastusõigus</li>
         <li>Eestikeelne nõustamine</li>
-        <li>Kohalik laovaru, kiire tarne</li>
+        <li>Kiire kohalik tarne</li>
       </ul>
     </div>
-
-    <div>
+    <div class="feature-right">
       <p class="feature-caption">Kalamehekott — Est. 2026</p>
     </div>
   </section>
