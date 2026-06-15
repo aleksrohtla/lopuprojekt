@@ -4,22 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontakt | Kalamehekott</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
   <nav>
     <div class="logo">Kalamehekott</div>
     <ul class="nav-links">
       <li><a href="index.html">Avaleht</a></li>
-      <li><a href="#">Tooted</a></li>
-      <li><a href="#">Kogud</a></li>
-      <li><a href="#">Kalastusinfo</a></li>
+      <li><a href="index.html#products">Tooted</a></li>
+      <li><a href="kalastusinfo.html">Kalastusinfo</a></li>
       <li><a href="contact.html">Kontakt</a></li>
     </ul>
+    <div class="mobile-dots">
+      <a href="index.html" class="dot-link" aria-label="Tooted"></a>
+      <a href="kalastusinfo.html" class="dot-link" aria-label="Kalastusinfo"></a>
+      <a href="contact.html" class="dot-link active" aria-label="Kontakt"></a>
+    </div>
   </nav>
 
-  <section class="hero">
+  <section class="hero contact-hero">
     <div class="hero-image">
       <img src="assets/contact.png" alt="Kontakt">
     </div>
@@ -47,5 +52,17 @@
     <div class="logo">Kalamehekott</div>
     <p>© 2026 Kalamehekott. Kõik õigused kaitstud.</p>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var nav = document.querySelector('nav');
+      var toggle = nav && nav.querySelector('.nav-icons');
+      if (toggle) {
+        toggle.addEventListener('click', function() {
+          nav.classList.toggle('open');
+        });
+      }
+    });
+  </script>
 </body>
 </html>

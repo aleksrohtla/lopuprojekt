@@ -1,0 +1,134 @@
+/* Mobile-specific overrides for compact layout and mobile menu */
+@media (max-width: 900px) {
+  nav {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 16px 24px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .nav-icons {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-dots {
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    z-index: 101;
+  }
+
+  .dot-link {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ffffff;
+    opacity: 0.55;
+    display: inline-block;
+  }
+
+  .dot-link.active {
+    opacity: 1;
+  }
+
+  .nav.open .nav-links {
+    display: flex;
+  }
+
+  .hero,
+  .feature,
+  .products,
+  .info-grid,
+  .tips-list {
+    grid-template-columns: 1fr;
+    margin: 0 24px 0;
+  }
+
+  .hero {
+    margin: 20px 24px 0;
+    gap: 24px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-text p,
+  .hero-eyebrow,
+  .hero-actions,
+  .hero-badge {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero.contact-hero {
+    padding: 24px;
+    margin: 20px 24px 0;
+  }
+
+  .hero-image {
+    height: 240px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p,
+  .section-label,
+  .feature-text p,
+  .info-card p,
+  .tip-item p,
+  .season-table-wrap th,
+  .season-table-wrap td,
+  .feature-caption,
+  footer p {
+    font-size: 0.95rem;
+  }
+
+  .products {
+    gap: 16px;
+  }
+
+  .product-card,
+  .info-card,
+  .tip-item,
+  .season-table-wrap,
+  .feature {
+    margin: 20px 0;
+  }
+
+  .product-card {
+    padding: 20px;
+  }
+
+  .section-label {
+    margin: 40px 24px 18px;
+  }
+
+  footer {
+    padding: 24px 24px;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
