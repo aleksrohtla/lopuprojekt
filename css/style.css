@@ -30,18 +30,24 @@ body {
 img { max-width: 100%; }
 
 .hero.contact-hero {
-  background: var(--contact-green);
+  background: var(--contact-green) !important;
   border-radius: 16px;
   padding: 32px;
   margin: 40px 48px 0;
+  color: var(--text-light);
 }
 
 .hero.contact-hero .hero-image {
+  background: var(--contact-green) !important;
+  border: 2px solid var(--contact-green);
+}
+
+.hero.contact-hero .hero-image img {
   background: var(--contact-green);
 }
 
-.hero.contact-hero .hero-text p,
-.hero.contact-hero .hero-text h1 {
+.hero.contact-hero .hero-text h1,
+.hero.contact-hero .hero-text p {
   color: var(--text-light);
 }
 
@@ -86,6 +92,10 @@ nav {
   list-style: none;
 }
 
+.nav.open .nav-links {
+  display: flex;
+}
+
 .nav-links a {
   color: var(--text-light);
   text-decoration: none;
@@ -116,6 +126,10 @@ nav {
   transition: background 0.2s;
 }
 
+.mobile-dots {
+  display: none;
+}
+
 .nav-icons span:hover {
   background: var(--accent-gold);
 }
@@ -140,7 +154,8 @@ nav {
 }
 
 .hero.contact-hero .hero-image {
-  background: var(--dark-khaki);
+  background: var(--contact-green);
+  border: 2px solid var(--contact-green);
 }
 
 .hero-image img {
@@ -477,6 +492,19 @@ footer p {
 .page-header {
   margin: 40px 48px 20px;
   text-align: left;
+}
+
+.kalastusinfo-page .page-header {
+  text-align: center;
+  margin: 40px auto 20px;
+  max-width: 1100px;
+  padding: 0 24px;
+}
+
+.kalastusinfo-page .page-header p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 840px;
 }
 
 .page-header span {

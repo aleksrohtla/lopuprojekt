@@ -88,6 +88,11 @@
 
   .hero-image {
     height: 240px;
+    order: 2;
+  }
+
+  .hero-text {
+    order: 1;
   }
 
   .hero-text h1 {
